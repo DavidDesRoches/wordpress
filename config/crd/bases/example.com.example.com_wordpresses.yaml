@@ -36,10 +36,11 @@ spec:
         spec:
           description: WordpressSpec defines the desired state of Wordpress
           properties:
-            foo:
-              description: Foo is an example field of Wordpress. Edit Wordpress_types.go
-                to remove/update
+            sqlRootPassword:
+              description: Assignment cites an SQL root password attribute.
               type: string
+          required:
+          - sqlRootPassword
           type: object
         status:
           description: WordpressStatus defines the observed state of Wordpress

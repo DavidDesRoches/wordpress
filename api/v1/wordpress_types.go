@@ -20,22 +20,15 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-// EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
-// NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
-
 // WordpressSpec defines the desired state of Wordpress
 type WordpressSpec struct {
-	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
-	// Important: Run "make" to regenerate code after modifying this file
-
-	// Foo is an example field of Wordpress. Edit Wordpress_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	// Assignment cites an SQL root password attribute.
+	SqlRootPassWord string `json:"sqlRootPassword"`
 }
 
 // WordpressStatus defines the observed state of Wordpress
 type WordpressStatus struct {
-	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
-	// Important: Run "make" to regenerate code after modifying this file
+	// Assignment doesn't cite states to be observed.
 }
 
 // +kubebuilder:object:root=true
